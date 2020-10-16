@@ -38,7 +38,7 @@ slowMath.add(6, 2).then(value => {
         console.log(err);
 });
 
-async function value() {
+async function doMath() {
     try {
         let value = await slowMath.add(6, 2);
         console.log(`Async/Await value is ${value}`);
@@ -62,4 +62,4 @@ async function value() {
         console.log(err);
     }
 }
-value();
+doMath();
