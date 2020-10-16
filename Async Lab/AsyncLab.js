@@ -2,38 +2,39 @@ slowMath.add(6, 2).then(value => {
     console.log(`Promise Chaining value is ${value}`);
     return slowMath.multiply(value, 2);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.divide(value, 4);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.subtract(value, 3);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.add(value, 98);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.remainder(value, 2);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.multiply(value, 50);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.remainder(value, 40);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Promise Chaining value is ${value}`);
         return slowMath.add(value, 32);
     })
-    .then((value) => {
+    .then(value => {
         console.log(`Final Promise Chaining value is ${value}`);
     })
     .catch(err => {
+        console.error(err);
         console.log(err);
     })
 
