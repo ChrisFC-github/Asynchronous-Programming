@@ -36,7 +36,7 @@ slowMath.add(6, 2).then(value => {
     .catch(err => {
         console.error(err);
         console.log(err);
-    })
+});
 
 async function value() {
     try {
